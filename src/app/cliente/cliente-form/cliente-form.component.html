@@ -1,9 +1,8 @@
-<h1 class="mt-4">Clientes</h1>
+   <div class="container">
+    <h1 class="mt-4">Clientes</h1>
     <ol class="breadcrumb mb-4">
-        <li class="breadcrumb-item active">Cadastro</li>
-    </ol>    
-
-    <div class="container">
+        <li class="breadcrumb-item active">Cadastro de Clientes</li>
+    </ol>   
         <form #clienteForm="ngForm" (ngSubmit)="onSubmit()">
             <div class="row">
                 <div class="col-md-6">
@@ -31,7 +30,7 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <label>CPF *:</label>
-                        <input type="text" class="form-control" [(ngModel)]="cliente.cpfCnpj" name="cpfCnpj" />
+                        <input type="text" class="form-control" [(ngModel)]="cliente.cpf" name="cpf" />
                     </div>
                 </div>
             </div>
