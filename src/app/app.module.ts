@@ -11,6 +11,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { ClienteModule } from './cliente/cliente.module';
 
 import { ClienteService } from './cliente.service';
+import { ServicoPrestadoModule } from './servico-prestado/servico-prestado.module';
+import { ServicoPrestadoService } from './servico-prestado.service';
 
 @NgModule({
   declarations: [
@@ -22,10 +24,12 @@ import { ClienteService } from './cliente.service';
     HttpClientModule,
     AppRoutingModule,
     TemplateModule,
-    ClienteModule
+    ClienteModule,
+    ServicoPrestadoModule
   ],
   providers: [
-    ClienteService
+    ClienteService,
+    ServicoPrestadoService
   ],
   bootstrap: [AppComponent]
 })
